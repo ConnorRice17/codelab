@@ -20,4 +20,21 @@ router.get('/', function(req, res, next) {
   })
 });
 
+router.get('/connor', function(req, res, next){
+
+
+
+var links = [
+{text: "Google", url: "https://www.google.com/"},
+{text: "Amazon", url: "https://www.amazon.com/"},
+{text: "Apple", url: "https://www.apple.com/"}
+]
+
+
+  res.render('connor_view', { title: 'Connor Page', data: links});
+})
+
+
+
+
 module.exports = router;
